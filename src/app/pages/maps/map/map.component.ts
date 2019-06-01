@@ -2,6 +2,7 @@ import { AfterViewInit, Component, HostBinding } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 declare const google: any;
+declare var componentHandler: any;
 
 @Component({
   selector: 'app-map',

@@ -1,5 +1,5 @@
 import 'material-design-lite/material';
-
+declare var componentHandler: any;
 import {
   AfterViewInit,
   Component,
@@ -26,7 +26,7 @@ export class TodoListComponent implements AfterViewInit, OnDestroy {
   private createdItem = null;
   private todoItemsSubscription;
 
-  @ViewChild('todoInput') private set todoInput(element: ElementRef) {
+  @ViewChild('todoInput', null) private set todoInput(element: ElementRef) {
     if (element) {
       element.nativeElement.focus();
     }

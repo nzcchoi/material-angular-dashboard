@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { AuthService } from '@services/';
+// import { AuthService } from '@services/';
 import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
+import { AuthService } from './../../../services/auth/auth.service';
 
 @Component({
   selector: 'app-login',

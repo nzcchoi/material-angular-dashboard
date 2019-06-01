@@ -1,4 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
+declare var componentHandler: any;
 
 @Component({
   template: '',

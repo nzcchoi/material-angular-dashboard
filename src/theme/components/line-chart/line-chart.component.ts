@@ -77,7 +77,7 @@ export abstract class LineChartComponent implements AfterViewInit {
 
     this.barsLayout = this.svg.append('g')
       .attr('class', 'bars')
-      .attr('transform', 'translate(' + this.margin + ', 0)')
+      .attr('transform', `translate(${this.margin}, 0)`)
       .selectAll('rect')
       .data(bars)
       .enter()
@@ -134,7 +134,6 @@ export abstract class LineChartComponent implements AfterViewInit {
       .showYAxis(true)
       .showXAxis(true)
       .pointSize(5);
-
     this.lineChart.tooltip.enabled(false);
     this.lineChart.interactiveLayer.tooltip.enabled(false);
 
